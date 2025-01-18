@@ -18,9 +18,9 @@ const Home = () => {
           </h1>
           {/* subtitle */}
           <p className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-            nostrum quam reprehenderit vero, tenetur voluptatem nulla aut
-            aspernatur dolores ut.
+            I'm a full-stack developer passionate about creating innovative web solutions. 
+            Specializing in modern web technologies, I transform complex problems into 
+            elegant, user-friendly applications.
           </p>
           {/* btn */}
           <div className='flex justify-center xl:hidden relative'>
@@ -51,7 +51,7 @@ const Home = () => {
           animate='show'
           exit='hidden'
           transition={{ duration: 1, ease: 'easeInOut' }}
-          className='w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]'
+          className='w-full h-full max-w-[637px] max-h-[578px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]'
         >
           <Avatar />
         </motion.div>

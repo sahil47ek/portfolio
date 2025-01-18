@@ -5,15 +5,23 @@ import {
   FaCss3,
   FaJs,
   FaReact,
-  FaWordpress,
   FaFigma,
+  FaGit,
+  FaUmbraco,
+  FaSass
 } from "react-icons/fa";
 
 import {
   SiNextdotjs,
-  SiFramer,
   SiAdobexd,
   SiAdobephotoshop,
+  SiBootstrap,
+  SiTypescript,
+  SiFirebase,
+  SiTailwindcss,
+  SiStrapi,
+  SiMysql,
+  SiMongodb,
 } from "react-icons/si";
 
 import Avatar from '../../components/Avatar'
@@ -21,6 +29,7 @@ import Circles from '../../components/Circles'
 import { motion } from 'framer-motion'
 import { fadeIn } from '../../variants'
 import CountUp from 'react-countup'
+import { Tooltip } from "../../components/ToolTip";
 
 //  data
 const aboutData = [
@@ -28,24 +37,42 @@ const aboutData = [
     title: 'skills',
     info: [
       {
-        title: 'Web Development',
+        title: 'WEB DEVELOPMENT',
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
+          <Tooltip tip="Html5">
+            <FaHtml5 />
+          </Tooltip>,
+          <Tooltip tip="JavaScript">
+            <FaJs />
+          </Tooltip>,
+          <Tooltip tip="TypeScript"><SiTypescript /></Tooltip>,
+          <Tooltip tip="ReactJS"><FaReact /></Tooltip>,
+          <Tooltip tip="NextJS"><SiNextdotjs /></Tooltip>,
+          <Tooltip tip="CSS3"><FaCss3 /></Tooltip>,
+          <Tooltip tip="TailwindCSS"><SiTailwindcss /></Tooltip>,
+          <Tooltip tip="Bootstrap5"><SiBootstrap /></Tooltip>,
+          <Tooltip tip="Sass"><FaSass /></Tooltip>,
+          <Tooltip tip="Strapi CMS"><SiStrapi /></Tooltip>,
+        ],
+
+      },
+      {
+        title: 'SEMI PROFESSIONAL IN',
+        icons: [
+          <Tooltip tip="Figma"><FaFigma /></Tooltip>, 
+          <Tooltip tip="Adobe XD"><SiAdobexd /></Tooltip>, 
+          <Tooltip tip="Photoshop"><SiAdobephotoshop /></Tooltip>, 
+          <Tooltip tip="Git Version Control"><FaGit /></Tooltip>, 
+          <Tooltip tip="Umbraco"><FaUmbraco /></Tooltip>, 
+          <Tooltip tip="Firebase"><SiFirebase /></Tooltip>,
+          <Tooltip tip="MySQL"> <SiMysql /></Tooltip>,
+          <Tooltip tip="MongoDB"> <SiMongodb /> </Tooltip>
         ],
       },
       {
-        title: 'Tools',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
-      },
-      {
-        title: 'AI Tools',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        title: 'AI TOOLS',
+        list1: 'ChatGPT | V0 | Bolt',
+        list2: 'Copilot & VSCode | Cursor'
       },
     ],
   },
@@ -53,16 +80,14 @@ const aboutData = [
     title: 'experience',
     info: [
       {
-        title: 'UX/UI Designer - XYZ Company',
-        stage: '2012 - 2023',
+        title: 'UI Developer @ Codegreen Technologies LLP',
+        para: 'Designed and coded websites, from layout to function, according to client specifications. Met with clients to discuss project requirements and workflow. Developed complex websites using Reactjs. ',
+        stage: '2017 - 2021',
       },
       {
-        title: 'Web Developer - ABC Agency',
-        stage: '2010 - 2012',
-      },
-      {
-        title: 'Intern - DEF Corporation',
-        stage: '2008 - 2010',
+        title: 'Software Engineer @ Stirred Creative',
+        para: 'Created web-based promotional collaterals for different campaigns, Optimized home and landing pages, Designed and developed email campaigns.',
+        stage: '2021 - 2024',
       },
     ],
   },
@@ -70,16 +95,12 @@ const aboutData = [
     title: 'Education',
     info: [
       {
-        title: 'Web Development - ABC University, LA, CA',
-        stage: '2011',
+        title: 'Bachelor of Technology | Computer Science',
+        stage: '2013-2017 [SCEM | VTU UNIVERSITY]',
       },
       {
-        title: 'Computer Science Diploma - AV Technical Institute',
-        stage: '2009',
-      },
-      {
-        title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-        stage: '2006',
+        title: 'Pre Degree | Information Practices',
+        stage: '2010-2012 [DAYAPURAM RESIDENTIAL SCHOOL]',
       },
     ],
   },
@@ -98,7 +119,7 @@ const About = () => {
         animate='show'
         exit='hidden'
         // className='flex-1 flex flex-col justify-center'
-        className='hidden xl:flex absolute bottom-0 -left-[370px]'
+        className='hidden xl:flex absolute bottom-0 -left-[260px]'
       >
         <Avatar />
       </motion.div>
@@ -121,7 +142,7 @@ const About = () => {
             exit='hidden'
             className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'
           >
-            10 years ago, I began freelancing as a developer. Since then, I've done
+            7 years ago, I began freelancing as a developer. Since then, I've done
             remote work for agencies, consulted for startups, and collaborated on
             digital products for business and consumer use.
           </motion.p>
@@ -137,7 +158,7 @@ const About = () => {
               {/* experience */}
               <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={10} duration={5} /> +
+                  <CountUp start={0} end={6} duration={5} /> +
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
                   Years of experience
@@ -146,7 +167,7 @@ const About = () => {
               {/* clients */}
               <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={250} duration={5} /> +
+                  <CountUp start={0} end={30} duration={5} /> +
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
                   Satisfied clients
@@ -155,7 +176,7 @@ const About = () => {
               {/* projects */}
               <div className='relative flex-1'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={650} duration={5} /> +
+                  <CountUp start={0} end={50} duration={5} /> +
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
                   Finished projects
@@ -200,19 +221,30 @@ const About = () => {
               return (
                 <div
                   key={itemIndex}
-                  className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60'
+                  className='flex-1 flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60'
                 >
                   {/* title */}
-                  <div className='font-light mb-2 md:mb-0'>{item.title}</div>
-                  <div className='hidden md:flex'>-</div>
+                  <div className='text-xl font-light mb-2 md:mb-0'>{item.title}</div>
                   <div>{item.stage}</div>
+
+
+                  <div className='font-light mt-4 md:mb-0'>{item.para}</div>
+
                   <div className='flex gap-x-4'>
                     {/* icons */}
                     {item.icons?.map((icon, itemIndex) => {
                       return <div key={itemIndex} className='text-2xl text-white'>{icon}</div>;
                     })}
                   </div>
+                  <div className="">
+                    <ul>
+                      <li className="tracking-widest"> {item.list1} </li>
+                      <li  className="tracking-widest"> {item.list2} </li>
+                    </ul>
+                  </div>
+                  <br />
                 </div>
+
               );
             })}
           </motion.div>

@@ -18,11 +18,7 @@ import {
 
 // service data
 export const serviceData = [
-  {
-    icon: <RxCrop />,
-    title: 'Branding',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
+  
   {
     icon: <RxPencil2 />,
     title: 'Design',
@@ -31,6 +27,11 @@ export const serviceData = [
   {
     icon: <RxDesktop />,
     title: 'Development',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+  },
+  {
+    icon: <RxCrop />,
+    title: 'Responsive Design',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   },
   {
@@ -43,6 +44,16 @@ export const serviceData = [
     title: 'SEO',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   },
+  {
+    icon: <RxRocket />,
+    title: 'Debugging',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+  },
+  {
+    icon: <RxRocket />,
+    title: 'Testing',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+  },
 ];
 
 const ServiceSlider = () => {
@@ -50,7 +61,7 @@ const ServiceSlider = () => {
     <Swiper
       breakpoints={{
         320: {
-          slidesPerView: 1,
+          slidesPerView: 3,
           spaceBetween: 15,
         },
         640: {
@@ -79,9 +90,9 @@ const ServiceSlider = () => {
                 </p>
               </div>
               {/* arrow */}
-              <div className='text-3xl'>
+              {/* <div className='text-3xl'>
                 <RxArrowTopRight className='group-hover:rotate-45 group-hover:text-accent transition-all duration-300' />
-              </div>
+              </div> */}
             </div>
           </SwiperSlide>
         );
