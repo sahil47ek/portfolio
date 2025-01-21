@@ -30,7 +30,7 @@ export const workSlides = {
         {
           title: 'Maxwell GeoSystems',
           path: '/maxwell.png',
-          link:'https://www.maxwellgeosystems.com/',
+          link: 'https://www.maxwellgeosystems.com/',
         },
         {
           title: 'STAPLES',
@@ -65,7 +65,16 @@ export const workSlides = {
 const WorkSlider = () => {
   return (
     <Swiper
-      spaceBetween={10}
+      breakpoints={{
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 15,
+        },
+        640: {
+          slidesPerView: 1 ,
+          spaceBetween: 15,
+        },
+      }}
       pagination={{
         clickable: true,
         dynamicBullets: true,
@@ -76,7 +85,7 @@ const WorkSlider = () => {
       {workSlides.slides.map((slide, index) => {
         return (
           <SwiperSlide key={index}>
-            <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 cursor-pointer h-full'>
+            <div className='grid grid-cols-2 sm:grid-cols-2 gap-4 cursor-pointer md:h-full'>
               {slide.images.map((image, index) => {
                 return (
                   <div
@@ -95,12 +104,12 @@ const WorkSlider = () => {
                       <div className='absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700'></div>
                       {/* title */}
                       <div className='absolute inset-0 flex flex-col justify-center items-center translate-y-full group-hover:translate-y-0 transition-all duration-300'>
-                        <h4 className='text-xl font-bold mb-2 text-white'>{image.title}</h4>
+                        <h4 className='md:text-xl font-bold mb-2 text-white'>{image.title}</h4>
                         <Link
                           href={`/work/${image.id}`}
                           className='flex items-center gap-x-2 text-[13px] tracking-[0.2em] uppercase'
                         >
-                          <span className='delay-100 font-bold'>View Project</span>
+                          <span className='delay-100 font-bold md:text-md text-sm'>View Project</span>
                           <BsArrowRight className='text-xl' />
                         </Link>
                       </div>

@@ -110,7 +110,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className='h-full bg-primary/30 py-32 text-center xl:text-left'>
+    <div className='h-full bg-primary/30 md:py-32 py-20 text-center xl:text-left'>
       <Circles />
       {/* image */}
       <motion.div
@@ -131,7 +131,7 @@ const About = () => {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className='h2 mt-32'
+            className='md:h2 text-md md:mt-32'
           >
             Captivating <span className='text-accent'>stories</span> birth magnificent designs.
           </motion.h2>
@@ -140,7 +140,7 @@ const About = () => {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'
+            className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 text-sm md:text-lg mt-2'
           >
             7 years ago, I began freelancing as a developer. Since then, I've done
             remote work for agencies, consulted for startups, and collaborated on
@@ -193,7 +193,7 @@ const About = () => {
             animate='show'
             exit='hidden'
             // className='grid xl:grid-cols-2 gap-4 mb-8 '
-            className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4'
+            className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 md:mb-4 mb-2'
           >
             {aboutData.map((item, itemIndex) => {
               return (
@@ -201,7 +201,7 @@ const About = () => {
                   key={itemIndex}
                   className={`${index === itemIndex &&
                     'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'
-                    }  cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
+                    }  cursor-pointer capitalize md:text-lg text-sm relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
                   onClick={() => setIndex(itemIndex)}
                 >
                   {item.title}
@@ -224,22 +224,22 @@ const About = () => {
                   className='flex-1 flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60'
                 >
                   {/* title */}
-                  <div className='text-xl font-light mb-2 md:mb-0'>{item.title}</div>
-                  <div>{item.stage}</div>
+                  <div className='md:text-xl text-sm font-light mb-2 md:mb-0'>{item.title}</div>
+                  <div className="text-sm md:text-lg">{item.stage}</div>
 
 
-                  <div className='font-light mt-4 md:mb-0'>{item.para}</div>
+                  <div className='font-light md:mt-4 md:mb-0 text-sm md:text-lg'>{item.para}</div>
 
                   <div className='flex gap-x-4'>
                     {/* icons */}
                     {item.icons?.map((icon, itemIndex) => {
-                      return <div key={itemIndex} className='text-2xl text-white'>{icon}</div>;
+                      return <div key={itemIndex} className='md:text-2xl text-white'>{icon}</div>;
                     })}
                   </div>
                   <div className="">
                     <ul>
-                      <li className="tracking-widest"> {item.list1} </li>
-                      <li  className="tracking-widest"> {item.list2} </li>
+                      <li className="tracking-widest text-sm md:text-lg"> {item.list1} </li>
+                      <li  className="tracking-widest text-sm md:text-lg"> {item.list2} </li>
                     </ul>
                   </div>
                   <br />

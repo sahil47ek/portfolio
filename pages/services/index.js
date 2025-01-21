@@ -10,7 +10,7 @@ import { fadeIn } from '../../variants'
 
 const Services = () => {
   return (
-    <div className='h-full bg-primary/30 py-36 flex items-center pt-40'>
+    <div className='h-full bg-primary/30 md:py-36 flex items-center md:pt-40'>
       <Circles />
       <div className='container mx-auto'>
         <div className='flex flex-col xl:flex-row gap-x-8'>
@@ -30,7 +30,7 @@ const Services = () => {
               initial='hidden'
               animate='show'
               exit='hidden'
-              className='mb-4 max-w-[400px] mx-auto lg:mx-0'
+              className='mb-4 max-w-[400px] mx-auto lg:mx-0 text-sm md:text-lg leading-normal'
             >
               I specialize in crafting modern, responsive, and high-performance web applications using Next.js, React.js, and TailwindCSS. 
             </motion.p>

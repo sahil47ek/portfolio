@@ -11,7 +11,7 @@ import {
 
 const Socials = () => {
   return (
-    <div className='flex items-center gap-x-5 text-lg'>
+    <div className='flex items-center md:gap-x-5 gap-x-3 text-lg md:relative absolute md:right-0 md:top-0 right-4 top-6'>
       <Link href={''} target="_blank" className='hover:text-accent transition-all duration-300'>
         <RiYoutubeLine />
       </Link>

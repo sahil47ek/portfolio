@@ -4,9 +4,9 @@ import Socials from './Socials'
 
 const Header = () => {
   return (
-    <header className='absolute z-30 w-full flex items-center px-16 xl:px-0 xl:h-[90px]'>
+    <header className='absolute z-30 w-full flex items-center md:px-16 xl:px-0 xl:h-[90px]'>
       <div className='container mx-auto'>
-        <div className='flex flex-col lg:flex-row justify-between items-center gap-y-6 py-8'>
+        <div className='flex flex-col lg:flex-row justify-between md:items-center gap-y-6 md:py-8 py-4'>
           {/* logo */}
           <Link href='/'>
             {/* <Image 
@@ -16,7 +16,7 @@ const Header = () => {
               alt='logo' 
               priority={true}
             /> */}
-            <h1 className='text-5xl'> mo <b> sahil.</b></h1>
+            <h1 className='md:text-5xl text-2xl '> mo <b> sahil.</b></h1>
           </Link>
           {/* socials */}
           <Socials />

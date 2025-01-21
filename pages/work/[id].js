@@ -47,7 +47,7 @@ const ProjectDetail = ({ project }) => {
                                     priority
                                 />
                             </div>
-                            <div className='mt-16 text-center'>
+                            <div className='md:mt-16 mt-4 text-center'>
                                 <Link
                                     href='/work'
                                     className='btn rounded-full border border-white/50 px-8 py-3 transition-all duration-300 inline-flex items-center gap-x-2 hover:border-accent group'
