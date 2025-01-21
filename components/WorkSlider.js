@@ -28,11 +28,13 @@ export const workSlides = {
           link: 'https://smartapp.com/',
         },
         {
+          id:'maxwell',
           title: 'Maxwell GeoSystems',
           path: '/maxwell.png',
           link: 'https://www.maxwellgeosystems.com/',
         },
         {
+          id:'staples',
           title: 'STAPLES',
           path: '/staples.png',
           link: 'https://www.staplescoworking.com/',

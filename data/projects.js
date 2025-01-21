@@ -2,7 +2,7 @@ export const projectData = [
   {
     id: 'phoenix-mall',
     title: 'Phoenix Mall of Asia',
-    description: 'A modern e-commerce website for Phoenix Mall of Asia, featuring an interactive store directory, event management system, and responsive design.',
+    description: 'Developed a dynamic e-commerce platform for Phoenix Mall of Asia using React and Tailwind CSS. Implemented an interactive store directory with real-time availability updates, integrated event booking system, and created a fully responsive design optimized for all devices. The project features smooth animations and a modern UI that enhances user engagement.',
     fullImage: '/moa.png',
     thumbnailImage: '/moa.png',
     websiteLink: 'https://phoenixmallofasia.com/',
@@ -20,7 +20,7 @@ export const projectData = [
   {
     id: 'smartapp',
     title: 'Smartapp',
-    description: 'Enterprise application platform with advanced analytics and reporting capabilities.',
+    description: 'Built a comprehensive enterprise application using Umbraco CMS and modern JavaScript. Implemented custom Bootstrap components and advanced CSS animations for an enhanced user interface. Created responsive layouts and interactive features while ensuring cross-browser compatibility and optimal performance.',
     fullImage: '/smartapp1.png',
     thumbnailImage: '/smartapp1.png',
     websiteLink: 'https://smartapp.com/',
@@ -29,10 +29,46 @@ export const projectData = [
     timeline: 'Nov 2021 - July 2024',
     role: 'Frontend Developer',
     features: [
-      'Real-time analytics dashboard',
-      'User authentication',
-      'Data visualization',
-      'Report generation'
+      'Custom CMS integration',
+      'Interactive UI components',
+      'Responsive layouts',
+      'Performance optimization'
+    ]
+  },
+  {
+    id: 'maxwell',
+    title: 'Maxwell GeoSystems',
+    description: 'Developed a modern web application using Next.js and Tailwind CSS for Maxwell GeoSystems. Implemented server-side rendering for improved performance and SEO. Created a responsive dashboard with real-time data visualization and interactive maps.',
+    fullImage: '/maxwell.png',
+    thumbnailImage: '/maxwell.png',
+    websiteLink: 'https://www.maxwellgeosystems.com/',
+    gitlabLink: 'https://gitlab.com/project-link',
+    technologies: ['Nextjs', 'Tailwindcss', 'Nodejs'],
+    timeline: 'Nov 2019 - Feb 2020',
+    role: 'Frontend Developer',
+    features: [
+      'Server-side rendering',
+      'Interactive dashboards',
+      'Geospatial visualization',
+      'Real-time data updates'
+    ]
+  },
+  {
+    id: 'staples',
+    title: 'Staples',
+    description: 'Created a custom WordPress website for Staples Coworking using modern web technologies. Implemented responsive design principles with Bootstrap 5 and custom CSS. Developed interactive features using JavaScript for enhanced user experience. Optimized site performance and implemented SEO best practices.',
+    fullImage: '/staples.png',
+    thumbnailImage: '/staples.png',
+    websiteLink: 'https://www.staplescoworking.com/',
+    gitlabLink: 'https://gitlab.com/project-link',
+    technologies: ['Wordpress', 'JavaScript', 'Html5', 'Bootstrap5', 'CSS3'],
+    timeline: 'Nov 2021 - July 2024',
+    role: 'Frontend Developer',
+    features: [
+      'Custom WordPress theme',
+      'Booking system integration',
+      'Responsive design',
+      'Performance optimization'
     ]
   },
   // Add other projects...
