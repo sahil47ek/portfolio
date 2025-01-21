@@ -10,12 +10,6 @@ export const projectData = [
     technologies: ['React', 'Tailwind CSS', 'Node.js'],
     timeline: 'Aug 2023 - April 2024',
     role: 'Lead Frontend Developer',
-    features: [
-      'Interactive store directory',
-      'Event booking system',
-      'Real-time store availability',
-      'Mobile-responsive design'
-    ]
   },
   {
     id: 'smartapp',
@@ -28,12 +22,6 @@ export const projectData = [
     technologies: ['Umbraco', 'JavaScript', 'Html5', 'Bootstrap5', 'CSS3'],
     timeline: 'Nov 2021 - July 2024',
     role: 'Frontend Developer',
-    features: [
-      'Custom CMS integration',
-      'Interactive UI components',
-      'Responsive layouts',
-      'Performance optimization'
-    ]
   },
   {
     id: 'maxwell',
@@ -46,12 +34,6 @@ export const projectData = [
     technologies: ['Nextjs', 'Tailwindcss', 'Nodejs'],
     timeline: 'Nov 2019 - Feb 2020',
     role: 'Frontend Developer',
-    features: [
-      'Server-side rendering',
-      'Interactive dashboards',
-      'Geospatial visualization',
-      'Real-time data updates'
-    ]
   },
   {
     id: 'staples',
@@ -64,12 +46,6 @@ export const projectData = [
     technologies: ['Wordpress', 'JavaScript', 'Html5', 'Bootstrap5', 'CSS3'],
     timeline: 'Nov 2021 - July 2024',
     role: 'Frontend Developer',
-    features: [
-      'Custom WordPress theme',
-      'Booking system integration',
-      'Responsive design',
-      'Performance optimization'
-    ]
   },
   // Add other projects...
 ]; 
