@@ -9,35 +9,35 @@ import { fadeIn } from '../../variants'
 
 const Work = () => {
   return (
-    <div className='h-full bg-primary/30 py-36 flex items-center pt-40'>
+    <div className='min-h-screen bg-primary/30 py-16 md:py-24 flex items-center'>
       <Circles />
-      <div className='container mx-auto'>
+      <div className='container mx-auto px-4 md:pe-8'>
         <div className='flex flex-col xl:flex-row gap-x-8'>
           {/* text */}
-          <div className='text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 mt-8 xl:mb-0'>
-            <motion.h2 
-              variants={fadeIn('up', 0.2)} 
+          <div className='text-center flex xl:w-[30vw] flex-col lg:text-left mb-8 xl:mb-0'>
+            <motion.h2
+              variants={fadeIn('up', 0.2)}
               initial='hidden'
               animate='show'
               exit='hidden'
               className='h2 xl:mt-8'
             >
-              My work <span className='text-accent'>.</span>
+              My Work <span className='text-accent'>.</span>
             </motion.h2>
-            <motion.p 
-              variants={fadeIn('up', 0.4)} 
+            <motion.p
+              variants={fadeIn('up', 0.4)}
               initial='hidden'
               animate='show'
               exit='hidden'
               className='mb-4 max-w-[400px] mx-auto lg:mx-0'
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Explore my portfolio of projects that showcase my expertise in web development, 
+              from responsive designs to complex applications.
             </motion.p>
           </div>
           {/* slider */}
-          <motion.div 
-            variants={fadeIn('down', 0.6)} 
+          <motion.div
+            variants={fadeIn('down', 0.6)}
             initial='hidden'
             animate='show'
             exit='hidden'

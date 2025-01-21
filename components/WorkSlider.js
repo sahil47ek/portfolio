@@ -8,6 +8,7 @@ import { FreeMode, Pagination } from 'swiper'
 // icons
 import { BsArrowRight } from 'react-icons/bs'
 import Image from 'next/image'
+import Link from 'next/link'
 
 // data
 export const workSlides = {
@@ -15,21 +16,26 @@ export const workSlides = {
     {
       images: [
         {
-          title: 'title',
-          path: '/thumb1.jpg',
-          link: 'https://project1-url.com'
+          id: 'phoenix-mall',
+          title: 'Phoenix Mall of Asia',
+          path: '/moa.png',
+          link: 'https://phoenixmallofasia.com/'
         },
         {
-          title: 'title',
-          path: '/thumb2.jpg',
+          id: 'smartapp',
+          title: 'Smartapp',
+          path: '/smartapp1.png',
+          link: 'https://smartapp.com/',
         },
         {
-          title: 'title',
-          path: '/thumb3.jpg',
+          title: 'Maxwell GeoSystems',
+          path: '/maxwell.png',
+          link:'https://www.maxwellgeosystems.com/',
         },
         {
-          title: 'title',
-          path: '/thumb4.jpg',
+          title: 'STAPLES',
+          path: '/staples.png',
+          link: 'https://www.staplescoworking.com/',
         },
       ],
     },
@@ -62,49 +68,41 @@ const WorkSlider = () => {
       spaceBetween={10}
       pagination={{
         clickable: true,
+        dynamicBullets: true,
       }}
       modules={[Pagination]}
-      className='h-[280px] sm:h-[480px] mt-8'
+      className='h-[480px] sm:h-[600px] xl:h-[480px] rounded-lg overflow-hidden'
     >
       {workSlides.slides.map((slide, index) => {
         return (
           <SwiperSlide key={index}>
-            <div className='grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 cursor-pointer h-full'>
               {slide.images.map((image, index) => {
                 return (
                   <div
                     key={index}
-                    className='relative rounded-lg overflow-hidden flex items-center justify-center group'
+                    className='relative rounded-lg overflow-hidden group'
                   >
-                    <div className='flex items-center justify-center relative overflow-hidden group'>
+                    <div className='flex items-center justify-center relative overflow-hidden group aspect-[4/3]'>
                       {/* image */}
                       <Image
                         src={image.path}
-                        width={500}
-                        height={300}
-                        alt=''
+                        fill
+                        alt={image.title}
+                        className='object-cover object-left object-center group-hover:scale-105 transition-transform duration-500'
                       />
                       {/* overlay gradient */}
                       <div className='absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700'></div>
                       {/* title */}
-                      <div className='absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300'>
-                        <a
-                          href={image.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className='flex items-center gap-x-2 text-[13px] tracking-[0.2em]'
+                      <div className='absolute inset-0 flex flex-col justify-center items-center translate-y-full group-hover:translate-y-0 transition-all duration-300'>
+                        <h4 className='text-xl font-bold mb-2 text-white'>{image.title}</h4>
+                        <Link
+                          href={`/work/${image.id}`}
+                          className='flex items-center gap-x-2 text-[13px] tracking-[0.2em] uppercase'
                         >
-                          {/* title part 1 */}
-                          <div className='delay-100'>LIVE</div>
-                          {/* title part 2 */}
-                          <div className='translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150'>
-                            PROJECT
-                          </div>
-                          {/* icon */}
-                          <div className='text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200'>
-                            <BsArrowRight />
-                          </div>
-                        </a>
+                          <span className='delay-100 font-bold'>View Project</span>
+                          <BsArrowRight className='text-xl' />
+                        </Link>
                       </div>
                     </div>
                   </div>
