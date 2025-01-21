@@ -18,7 +18,7 @@ const Home = () => {
           </h1>
           {/* subtitle */}
           <p className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'>
-            I'm a full-stack developer passionate about creating innovative web solutions. 
+            I'm a frontend developer passionate about creating innovative web solutions. 
             Specializing in modern web technologies, I transform complex problems into 
             elegant, user-friendly applications.
           </p>

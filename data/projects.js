@@ -2,7 +2,7 @@ export const projectData = [
   {
     id: 'phoenix-mall',
     title: 'Phoenix Mall of Asia',
-    description: 'Developed a dynamic e-commerce platform for Phoenix Mall of Asia using React and Tailwind CSS. Implemented an interactive store directory with real-time availability updates, integrated event booking system, and created a fully responsive design optimized for all devices. The project features smooth animations and a modern UI that enhances user engagement.',
+    description: 'Developed a dynamic e-commerce platform for Phoenix Mall of Asia using React and Tailwind CSS. Implemented an interactive store directory with real-time availability updates, integrated event booking system, and created a fully responsive design optimized for all devices. ',
     fullImage: '/moa.png',
     thumbnailImage: '/moa.png',
     websiteLink: 'https://phoenixmallofasia.com/',
