@@ -47,5 +47,17 @@ export const projectData = [
     timeline: 'Nov 2021 - July 2024',
     role: 'Frontend Developer',
   },
+  {
+    id: 'digital',
+    title: 'Digital Ecommerce | Dummy',
+    description: 'A Dummy website I created in my passtime using Nextjs',
+    fullImage: '/digital.png',
+    thumbnailImage: '/digital.png',
+    websiteLink: 'https://digital-ecommerce-neon.vercel.app/',
+    gitlabLink: 'https://github.com/sahil47ek/digital-ecommerce',
+    technologies: ['Nextjs', 'Tailwindcss', 'Typescript'],
+    timeline: 'Jan 2025',
+    role: 'Frontend Developer',
+  },
   // Add other projects...
 ]; 

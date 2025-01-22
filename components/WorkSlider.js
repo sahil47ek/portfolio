@@ -44,8 +44,10 @@ export const workSlides = {
     {
       images: [
         {
-          title: 'title',
-          path: '/thumb4.jpg',
+          id:'digital',
+          title: 'DIGITAL ECOMMERCE',
+          path: '/digital.png',
+          link: 'https://digital-ecommerce-neon.vercel.app/',
         },
         {
           title: 'title',
