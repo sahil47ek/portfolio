@@ -50,12 +50,16 @@ export const workSlides = {
           link: 'https://digital-ecommerce-neon.vercel.app/',
         },
         {
-          title: 'title',
-          path: '/thumb1.jpg',
+          id:'stay-hopper',
+          title: 'STAY HOPPER',
+          path: '/hopper.png',
+          link:'https://www.stayhopper.com/',
         },
         {
-          title: 'title',
-          path: '/thumb2.jpg',
+          id:'chicking',
+          title: 'CHICKING',
+          path: '/chicking.png',
+          link:'https://web.chicking.app/',
         },
         {
           title: 'title',
